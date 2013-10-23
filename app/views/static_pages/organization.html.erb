@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, "CusXP - Your Customers' eXPerience") %>
+
+  <script>
+      try {
+          Typekit.load();
+      } catch (e) {
+      }
+      $(window).load(function () {
+          $('#wrap_all_content').show();
+      });
+  </script>
+  <script>
+      $(document).ready(function () {
+          $('a[href^="#"]').on('click', function (e) {
+              e.preventDefault();
+
+              var target = this.hash,
+                      $target = $(target);
+
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+              });
+          });
+          $('#sub_nav').onePageNav();
+      });
+  </script>
+
+</head>
+<body>
+<div id="wrap">
+<div id="wrap_all_content" style="display:none">
+
+<div id="top_navigation">
+  <div class="header_image"><a href="<%= customer_path %>"><img src="/assets/admin/CusXP.png"></a></div>
+  <div class="website_menu">
+    <%= render 'shared/nav' %>
+    <div class="sub_tabs font14-medium">
+      <ul id="sub_nav">
+        <li><a href="#why" class="current">Why</a></li>
+        |
+        <li><a href="#what">What</a></li>
+        |
+        <li><a href="#how">How</a></li>
+        <li><a href="#contact_form" class="contact_link_hidden">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+<div class="content_wrap">
+<div id="why">
+<span class="goto"></span>
+
+<div class="posters">
+
+<div class="slider_each">
+  <div class="slider_title">It's A Kind Of Magic.</div>
+  <div class="magic_poster_container overflow_hidden">
+    <img class="unit2_margin_top organization_magic" src="/assets/admin/prelaunch/organization/slider-1.png">
+  </div>
+
+  <div class="unit1_height"></div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">How we:</div>
+  <div class="sequence_icon">
+    <div class="text-center sequence_icon_css">1</div>
+  </div>
+  <div class="text-center font18-book">Intelligently benchmark your present and prospective
+    <b>Cus</b>tomers'
+    e<b>XP</b>erience.
+  </div>
+
+  <img class="unit1_margin_top" src="/assets/admin/prelaunch/organization/slider-2.png">
+
+  <div class="unit4_height"></div>
+
+  <div class="get_cusxp_now override_margin_top">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">How we:</div>
+  <div class="sequence_icon">
+    <div class="text-center sequence_icon_css">2</div>
+  </div>
+  <div class="text-center font18-book">Extend your present and prospective customers' affinity
+    towards
+    attracting potential customers.
+  </div>
+
+  <div class="poster_center">
+    <img class="unit1_margin_top unit15_width"
+         src="/assets/admin/prelaunch/organization/slider-3.png"></div>
+  <div class="unit4_height"></div>
+
+  <div class="get_cusxp_now override_margin_top">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">How we:</div>
+  <div class="sequence_icon">
+    <div class="text-center sequence_icon_css">3</div>
+  </div>
+  <div class="text-center font18-book">Deliver actionable business analytics for your customers
+    and your
+    organization to profit from.
+  </div>
+  <img class="unit1_margin_top" src="/assets/admin/prelaunch/organization/slider-4.png">
+
+  <div class="unit4_height"></div>
+  <div class="unit1_height"></div>
+  <div class="unit_half_height"></div>
+
+  <div class="get_cusxp_now override_margin_top">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+
+<div class="slider_each">
+  <div class="slider_title slider_title">One Dream, One Soul.</div>
+  <div class="poster_content">
+    <div class="unit12_width float_left">
+      <div class="unit12_height"></div>
+      <div class="font18-book unit1_margin_left">All this is done simply by creating and adding some code on
+        your website and promoting its use at all your touch points.
+      </div>
+      <div class="unit11_height"></div>
+      <div class="button_left">
+        <div class="get_cusxp_now">
+          <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="dream_soul_poster">
+      <img class="unit2_margin_top lazy"
+           src="/assets/admin/prelaunch/organization/slider-5.png"></div>
+    <div class="clear-multi-column"></div>
+
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">One Prize, One Goal.</div>
+  <div class="poster_content">
+    <div class="unit11_width float_left">
+      <div class="unit2_height"></div>
+      <div class="prize_goal_poster lazy">
+        <img src="/assets/admin/prelaunch/organization/slider-6.png"></div>
+    </div>
+
+    <div class="float_right unit11_width override_margin_right">
+      <div class="unit2_height"></div>
+
+      <div class="font18-book">You desire your potential customers to become
+        your prospective
+        customers and your prospective customers to become your present customers.
+      </div>
+      <div class="unit2_height"></div>
+
+      <div class="font18-book">Your prize for using <b>CusXP</b> will be greater than that.</div>
+
+      <div class="unit4_height"></div>
+      <div class="unit4_height"></div>
+
+      <div class="get_cusxp_now">
+        <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+      </div>
+    </div>
+    <div class="clear-multi-column"></div>
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">One Golden Glance,<br>Of What Should Be.</div>
+  <div class="unit2_height"></div>
+  <div class="text-center">
+    <button class="slider_tab">Mobile</button>
+  </div>
+  <div class="unit2_height"></div>
+
+  <div class="poster_center">
+    <img class="poster_screeenshot" class="unit2_margin_top"
+         src="/assets/admin/prelaunch/organization/slider-7.png">
+  </div>
+
+  <div class="get_cusxp_now">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">One Golden Glance,<br>Of What Should Be.</div>
+  <div class="unit2_height"></div>
+  <div class="text-center">
+    <button class="slider_tab">Tablet</button>
+  </div>
+
+  <div class="poster_center">
+    <img class="poster_screeenshot unit2_margin_top"
+         src="/assets/admin/prelaunch/organization/slider-8.png">
+  </div>
+
+  <div class="get_cusxp_now">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">One Golden Glance,<br>Of What Should Be.</div>
+  <div class="unit2_height"></div>
+  <div class="text-center">
+    <button class="slider_tab">Desktop</button>
+  </div>
+  <div class="unit2_height"></div>
+  <img src="/assets/admin/prelaunch/organization/slider-9.png">
+
+  <div class="unit2_height"></div>
+  <div class="unit_half_height"></div>
+  <div class="get_cusxp_now">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+<div class="slider_each">
+  <div class="slider_title">One Shaft Of Light, That Shows The Way.</div>
+  <div class="unit2_height"></div>
+  <div class="text-center font18-book">
+    <img src="/assets/admin/CusXP.png" class="unit3_height">
+
+    <div class="unit_half_margin_left inline">provides you with...</div>
+  </div>
+  <div class="unit3_height"></div>
+  <img src="/assets/admin/prelaunch/organization/slider-10.png">
+
+  <div class="unit4_height"></div>
+  <div class="text-center font18-book">...in one place, by doing just one thing.</div>
+  <div class="unit2_height"></div>
+
+  <div class="get_cusxp_now">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+
+<div class="slider_each">
+  <div class="slider_title">Yes!<br>You Too Can Win Today.</div>
+  <div class="poster_content">
+    <div class="unit13_width float_left">
+      <div class="unit2_height"></div>
+      <div class="font18-book unit1_margin_left">
+        In the future machines will intelligently recognize the value of <b>CusXP</b> and promote it across all
+        your customer touch points.
+      </div>
+      <div class="unit2_height"></div>
+      <div class="font18-book unit1_margin_left">
+        Until then, it will take a human being like you to make the decision and receive the credit for doing
+        so.
+      </div>
+      <div class="unit3_height"></div>
+      <div class="font18-book unit1_margin_left">
+        You can make a difference.
+      </div>
+    </div>
+    <div class="you_can_win_poster override_margin_right overflow_hidden">
+      <div class="unit2_height"></div>
+      <img class="unit1_margin_left" src="/assets/admin/prelaunch/organization/slider-11.png"></div>
+    <div class="clear-multi-column"></div>
+  </div>
+  <div class="unit1_height"></div>
+  <div class="get_cusxp_now">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+
+<div class="slider_each">
+  <div class="slider_title">The Only Thing,<br>That Is Left For You,<br>Is To Challenge<br>The Doors Of
+    Time.
+  </div>
+  <div class="poster_content">
+    <div class="unit10_width float_left override_margin_left">
+      <div class="unit5_height"></div>
+      <div class="prize_goal_poster">
+        <img src="/assets/admin/prelaunch/organization/slider-12.png"></div>
+    </div>
+
+    <div class="float_right unit12_width override_margin_right">
+      <div class="unit2_height"></div>
+
+      <div class="font18-book">You've sensed, the potential of how <b>CusXP</b> is a game changer.</div>
+      <div class="unit2_height"></div>
+      <div class="font18-book">You've recognizsed, how using it early gives your organization a head start.</div>
+      <div class="unit2_height"></div>
+      <div class="font18-book">So, get started on it now and see for yourself how easy it is to start profiting
+        from it.
+      </div>
+    </div>
+    <div class="clear-multi-column"></div>
+  </div>
+  <div class="get_cusxp_now">
+    <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a></button>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div id="what">
+  <span class="goto"></span>
+
+  <div class="posters">
+
+    <div class="slider_each">
+      <div class="slider_title">
+        <div class="inline">What</div>
+        <img src="/assets/admin/CusXP.png" class="unit2_height inline cuxp_logo_inline">
+
+        <div class="inline">Does For You.</div>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center font18-book sub_title">Innovate <b>Cus</b>tomers' e<b>XP</b>erience.</div>
+
+      <div class="cusxp_two_columns">
+        <div class="unit2_height"></div>
+        <div class="column_left">
+          <img class="unit10_height" src="/assets/admin/prelaunch/organization/what/Slider-1-1.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/what/Slider-1-2.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/what/Slider-1-3.png">
+        </div>
+        <div class="column_right">
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Get Intelligent Feedback.
+          </div>
+          <div class="unit2_height "></div>
+          <div class="unit2_height"></div>
+          <div class="font18-book unit1_margin_left messages_fixed_width_200">Know <br> What<br></div>
+
+          <div class="unit1_margin_left unit4_height works_or_not">
+            <table>
+              <tr>
+                <td>
+                  <div class="inline font18-book float_left">
+                    <div class="unit2_height"></div>
+                    Works.
+                  </div>
+                </td>
+                <td>
+                  <div class="what_divider inline float_left">
+                    <img class="unit3_height"
+                         src="/assets/admin/prelaunch/organization/what/Slider-1-2-divider.png"></div>
+                </td>
+                <td>
+                  <div class="inline float_left font18-book">Doesn't <br> Work.</div>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+
+          <div class="unit2_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Immediately Improve
+            Experience.
+          </div>
+          <div class="get_cusxp_now">
+            <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a>
+            </button>
+          </div>
+        </div>
+        <div class="clear-multi-column"></div>
+      </div>
+    </div>
+
+    <div class="slider_each">
+      <div class="slider_title">
+        <div class="inline">What</div>
+        <img src="/assets/admin/CusXP.png" class="unit2_height inline cuxp_logo_inline">
+
+        <div class="inline">Does For You.</div>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center font18-book sub_title">Promote Value Propositions.</div>
+
+      <div class="cusxp_two_columns">
+        <div class="unit2_height"></div>
+        <div class="column_left">
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Collate Positive
+            Experiences.
+          </div>
+          <div class="unit2_height"></div>
+          <div class="unit2_height"></div>
+          <div class="font18-book unit1_margin_left messages_fixed_width_200">Incentivize Word-Of-Mouth
+            Marketing.
+          </div>
+
+          <div class="unit2_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Attract More Customers.
+          </div>
+          <div class="unit2_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="get_cusxp_now">
+            <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a>
+            </button>
+          </div>
+        </div>
+        <div class="column_right">
+          <img class="unit10_height" src="/assets/admin/prelaunch/organization/what/Slider-2-1.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/what/Slider-2-2.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/what/Slider-2-3.png">
+        </div>
+
+
+        <div class="clear-multi-column"></div>
+      </div>
+    </div>
+
+    <div class="slider_each">
+      <div class="slider_title">
+        <div class="inline">What</div>
+        <img src="/assets/admin/CusXP.png" class="unit2_height inline cuxp_logo_inline">
+
+        <div class="inline">Does For You.</div>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center font18-book sub_title">Build 1-to-1 Relationships.</div>
+
+      <div class="cusxp_two_columns">
+        <div class="unit2_height"></div>
+        <div class="column_left">
+          <img class="unit10_height" src="/assets/admin/prelaunch/organization/what/Slider-3-1.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/what/Slider-3-2.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/what/Slider-3-3.png">
+        </div>
+
+        <div class="column_right">
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Know Your Customers.</div>
+          <div class="unit4_height"></div>
+          <div class="unit2_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Respect Their Privacy.</div>
+          <div class="unit2_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="unit2_height"></div>
+          <div class="font18-book unit1_margin_left messages_fixed_width_130">Serve Their Interests.</div>
+          <div class="unit2_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="get_cusxp_now">
+            <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a>
+            </button>
+          </div>
+        </div>
+        <div class="clear-multi-column"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="how">
+  <span class="goto"></span>
+
+  <div class="posters">
+
+    <div class="slider_each">
+      <div class="slider_title">
+        <div class="inline">How To Profit From</div>
+        <img src="/assets/admin/CusXP.png" class="unit2_height inline cuxp_logo_inline">
+
+        <div class="inline organization_how_extra_dot">.</div>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center">
+        <button class="slider_tab font18-book">Enterprise</button>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center font18-book sub_title">CusXP Analytics; Like Never Before.</div>
+
+      <div class="cusxp_two_columns">
+        <div class="unit2_height"></div>
+        <div class="column_left">
+          <img class="unit10_height" src="/assets/admin/prelaunch/organization/how/Slider-1-1.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/how/Slider-1-2.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/how/Slider-1-3.png">
+        </div>
+
+        <div class="column_right">
+          <div class="font18-book unit1_margin_left">Contact Us Now.</div>
+          <div class="sub_title font14-book unit1_margin_left messages_fixed_width_200">Your needs are
+            sophisticated.
+          </div>
+          <div class="unit4_height"></div>
+          <div class="unit1_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="font18-book unit1_margin_left">We'll Customize Everything.</div>
+          <div class="sub_title font14-book unit1_margin_left messages_fixed_width_200">And advice you
+            accordingly.
+          </div>
+          <div class="unit3_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="font18-book unit1_margin_left">You'll Be Delighted.</div>
+          <div class="sub_title font14-book unit1_margin_left messages_fixed_width_200">By the value
+            gained.
+          </div>
+          <div class="unit2_height"></div>
+
+          <div class="contact_us_now nag_unit2_margin_top">
+            <button class="button_cusxp font14-book"><a href="#contact_form">Contact Us Now</a></button>
+          </div>
+
+        </div>
+        <div class="clear-multi-column"></div>
+      </div>
+    </div>
+
+    <div class="slider_each">
+      <div class="slider_title">
+        <div class="inline">How To Profit From</div>
+        <img src="/assets/admin/CusXP.png" class="unit2_height inline cuxp_logo_inline">
+
+        <div class="inline organization_how_extra_dot">.</div>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center">
+        <button class="slider_tab font18-book">Standard</button>
+      </div>
+      <div class="unit1_height"></div>
+      <div class="text-center font18-book sub_title">It's Complimentary - Our Gift To You.</div>
+
+      <div class="cusxp_two_columns">
+        <div class="unit2_height"></div>
+        <div class="column_left">
+          <div class="font18-book unit1_margin_left">Claim Your Name.</div>
+          <div class="sub_title font14-book unit1_margin_left messages_fixed_width_200">Before it's
+            gone.
+          </div>
+          <div class="unit4_height"></div>
+          <div class="unit3_height"></div>
+          <div class="unit_half_height"></div>
+          <div class="font18-book unit1_margin_left">Create Your Code.</div>
+          <div class="sub_title font14-book unit1_margin_left messages_fixed_width_200">It's really
+            easy.
+          </div>
+          <div class="unit4_height"></div>
+          <div class="unit3_height"></div>
+          <div class="font18-book unit1_margin_left">Add To Website.</div>
+          <div class="sub_title font14-book unit1_margin_left messages_fixed_width_200">It's that
+            simple.
+          </div>
+          <div class="get_cusxp_now">
+            <button class="button_cusxp font14-book"><a href="#contact_form">Get <b>CusXP</b> Now</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="column_right">
+          <img class="unit10_height" src="/assets/admin/prelaunch/organization/how/Slider-2-1.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/how/Slider-2-2.png">
+          <img class="unit1_margin_top unit10_height"
+               src="/assets/admin/prelaunch/organization/how/Slider-2-3.png">
+        </div>
+
+
+        <div class="clear-multi-column"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<%= render 'shared/contact_form' %>
+
+</div>
+
+</div>
+
+<%= render 'shared/footer' %>
+</div>
+</div>
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        pagination: '.pagination',
+        loop: true,
+        grabCursor: true,
+        paginationClickable: true
+    })
+</script>
+</body>
+</html>

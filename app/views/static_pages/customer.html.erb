@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, "CusXP - Your Customers' eXPerience") %>
+
+  <script>
+      try {
+          Typekit.load();
+      } catch (e) {
+      }
+      $(window).load(function () {
+          $('#wrap_all_content').show();
+      });
+  </script>
+  <script>
+      $(document).ready(function () {
+          $('a[href^="#"]').on('click', function (e) {
+              e.preventDefault();
+
+              var target = this.hash,
+                      $target = $(target);
+
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+              });
+          });
+          $('#sub_nav').onePageNav();
+      });
+  </script>
+</head>
+<body>
+<div id="wrap">
+<div id="wrap_all_content" style="display:none">
+
+<div id="top_navigation">
+  <div class="header_image"><a href="<%= customer_path %>"><img src="/assets/admin/CusXP.png"></a></div>
+  <div class="website_menu">
+    <%= render 'shared/nav' %>
+    <div class="sub_tabs font14-medium">
+      <ul id="sub_nav">
+        <li><a href="#why" class="current">Why</a></li>
+        <li><a href="#contact_form" class="contact_link_hidden">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div id="content">
+<div class="content_wrap">
+
+<div id="why">
+<span class="goto"></span>
+
+<div class="posters">
+  <div class="slider_each">
+    <div class="get_reward_title">
+      <div class=" font32-light text-center">Get Rewarded<br>For Sharing<br>Your Experience.</div>
+    </div>
+    <div class="get_rewards_img"><img src="/assets/admin/prelaunch/customer/why/Customers-Slider-1.png">
+    </div>
+
+    <div class="get_rewards_msg">
+      <div class="font14-book text-center">Sharing your experience<br> makes the great even greater.</div>
+      <div class="unit2_height"></div>
+      <div class="font14-book text-center">And it assists the poor to improve</div>
+      <div class="unit2_height"></div>
+      <div class="font14-book text-center">So, shouldn't you be rewarded<br>for sharing your experience?
+      </div>
+    </div>
+
+    <div class="unit2_height"></div>
+
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+
+  </div>
+
+  <div class="slider_each">
+    <div class="share_fun_title text-left">
+      <div class=" font32-light unit13_width">Sharing Is More Fun With Friends.</div>
+      <div class="unit2_height"></div>
+      <div class="share_fun_message font14-book">
+        <div class="unit7_width">Share great experiences.</div>
+        <div class="unit2_height"></div>
+        <div class="unit6_width">And discover great experiences.</div>
+        <div class="unit2_height"></div>
+        <div>Trusted <br>word-of-mouth <br>from people you know.</div>
+      </div>
+    </div>
+    <div class="share_fun_img">
+      <img style="height: 782px" src="/assets/admin/prelaunch/customer/why/Customers-Slider-2.png"></div>
+
+    <div class="text-left unit1_margin_left special_case_button_display">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+    <div class="unit1_height"></div>
+  </div>
+
+  <div class="slider_each">
+    <div class="text-center font32-light override_margin_right override_margin_left">Imagine Yourself At The
+      <br>Centre Of The Conversation.
+    </div>
+    <div class="unit2_margin_top text-center">
+      <img class="unit13_width" src="/assets/admin/prelaunch/customer/why/Customers-Slider-3.png">
+    </div>
+
+    <div class="unit1_height"></div>
+    <div class="unit_half_height"></div>
+    <div class="text-center font14-book">
+      <div>The more you share. <br>
+        The better organizations understand your needs <br>
+        And the more customised value you gain.
+      </div>
+    </div>
+
+    <div class="unit1_height"></div>
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+
+  </div>
+
+  <div class="slider_each">
+    <div class="text-center font32-light">
+      Now You Can Share Your Experience Anytime.
+    </div>
+    <div class="unit2_margin_top text-center">
+      <img class="unit9_width" src="/assets/admin/prelaunch/customer/why/Customers-Slider-4.png">
+    </div>
+
+    <div class="unit1_height"></div>
+    <div class="text-center font14-book">
+      <div>Some organizations only engage you <br>
+        during certain hours and days
+      </div>
+      <div class="unit1_height"></div>
+      <div class="unit_half_height"></div>
+      <div>Most organizations don't measure your <br>before and after experience.</div>
+      <div class="unit1_height"></div>
+      <div class="unit_half_height"></div>
+      <div>
+        <img src="/assets/admin/CusXP.png" class="unit1_5_height inline cuxp_logo_inline">
+
+        <div class="inline">works; anytime.</div>
+      </div>
+    </div>
+
+    <div class="unit2_height"></div>
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+  </div>
+
+  <div class="slider_each">
+    <div class="text-center font32-light">
+      You Can Also Share From Anywhere.
+    </div>
+    <div class="unit2_margin_top text-center">
+      <img class="unit7_width" src="/assets/admin/prelaunch/customer/why/Customers-Slider-5.png">
+    </div>
+
+    <div class="unit1_height"></div>
+    <div class="unit_half_height"></div>
+    <div class="text-center font14-book">
+      <div>Some organizations only function at certain places.</div>
+      <div class="unit2_height"></div>
+      <div>What if you left one location / city / country <br>
+        and went to another?
+      </div>
+      <div class="unit2_height"></div>
+      <div>
+        <img src="/assets/admin/CusXP.png" class="unit1_5_height inline cuxp_logo_inline">
+
+        <div class="inline">works; anywhere.</div>
+      </div>
+    </div>
+    <div class="unit3_height"></div>
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+  </div>
+
+  <div class="slider_each">
+    <div class="text-center font32-light">
+      <img src="/assets/admin/CusXP.png" class="unit2_height inline cuxp_logo_inline">
+
+      <div class="inline">Does More For You -</div>
+      <div class="inline">Use It To:</div>
+    </div>
+    <div class="unit2_margin_top text-center">
+      <img class="unit21_width" src="/assets/admin/prelaunch/customer/why/Customers-Slider-6.png">
+    </div>
+    <div class="unit3_height"></div>
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+
+  </div>
+
+  <div class="slider_each">
+    <div class="text-center font32-light">
+      <div>Yes -</div>
+      <div>Your Voice Really Matters.</div>
+    </div>
+    <div class="unit2_margin_top text-center">
+      <img class="unit20_width" src="/assets/admin/prelaunch/customer/why/Customers-Slider-7.png">
+    </div>
+
+    <div class="unit4_height"></div>
+    <div class="unit1_height"></div>
+    <div class="text-center font14-book">
+      <div>So, use it wisely to make a true difference.</div>
+      <div>And please keep a few things in mind.</div>
+      <div>Be truthful, be fair and be a great human being.</div>
+    </div>
+    <div class="unit4_height"></div>
+    <div class="unit1_height"></div>
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+
+  </div>
+  <div class="slider_each">
+    <div class="text-center font32-light">
+      <div>Yes -</div>
+      <div>Your Voice Really Matters.</div>
+    </div>
+    <div class="unit1_height"></div>
+    <div class="unit2_margin_top text-center">
+      <img class="unit8_width" src="/assets/admin/prelaunch/customer/why/Customers-Slider-8.png">
+    </div>
+
+    <div class="unit3_height"></div>
+    <div class="text-center font14-book">
+      <div>You have a right to great experiences.</div>
+      <div>But, it doesn't make you right.</div>
+      <div>Please keep that in mind.</div>
+    </div>
+    <div class="unit3_height"></div>
+    <div class="text-center">
+      <img src="/assets/admin/App-Store-Icon.png" class="unit3_height inline">
+      <img src="/assets/admin/Google-Play-Icon.png" class="unit3_height inline">
+    </div>
+  </div>
+</div>
+</div>
+
+<%= render 'shared/contact_form' %>
+
+</div>
+</div>
+
+<%= render 'shared/footer' %>
+</div>
+</div>
+</body>
+</html>

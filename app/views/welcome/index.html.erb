@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+      try {
+          Typekit.load();
+      } catch (e) {
+      }
+      $(window).load(function () {
+          $('#wrap_all_content').show();
+      });
+  </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="wrap_all_content" style="display:none">
+
+    <div id="content" style="padding-top:0">
+      <div class="content_wrap">
+        <div id="welcome">
+          <div class="unit3_height"></div>
+          <a href="<%= root_path %>"><img class="welcome_logo" src="/assets/admin/prelaunch/CusXP-logo-animation.gif"> </a>
+
+          <div class="unit3_height"></div>
+          <div class=" font24-book text-center">If you would like to collaborate with us or use our solutions to
+            improve your <b>Cus</b>tomers' e<b>XP</b>erience, do drop us a request through the Contact form below.
+          </div>
+          <div class="unit2_height"></div>
+          <div class=" font24-book text-center">If we have given you a Username and Password to access our site,
+            please <%= link_to 'click here', customer_path %>.
+          </div>
+          <div class="unit3_height"></div>
+        </div>
+
+        <%= render 'shared/contact_form' %>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

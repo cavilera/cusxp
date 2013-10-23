@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, "CusXP - Your Customers' eXPerience") %>
+
+  <script>
+      try {
+          Typekit.load();
+      } catch (e) {
+      }
+      $(window).load(function () {
+          $('#wrap_all_content').show();
+      });
+  </script>
+  <script>
+      $(document).ready(function () {
+          $('a[href^="#"]').on('click', function (e) {
+              e.preventDefault();
+
+              var target = this.hash,
+                      $target = $(target);
+
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+              });
+          });
+          $('#sub_nav').onePageNav();
+      });
+  </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="wrap_all_content" style="display:none">
+
+
+    <div id="top_navigation">
+      <div class="header_image"><a href="<%= customer_path %>"><img src="/assets/admin/CusXP.png"></a></div>
+      <div class="website_menu">
+        <%= render 'shared/nav' %>
+        <div class="sub_tabs">
+          <div class="unit1_height"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="content_wrap">
+
+        <div id="about">
+          <div id="about_top_section">
+            <div class="unit2_height"></div>
+            <div class="header_image">
+              <img src="/assets/admin/CusXP.png" class="unit2_height">
+            </div>
+
+
+            <div class="unit1_height"></div>
+            <div class="text-center">
+              <div class="font14-book sub_title">
+                <div class="inline">[kǔsp]</div>
+                <div class="inline_block">
+                  <div class="pronunciation" onclick="document.getElementById('player').play();">
+                  </div>
+                </div>
+
+                <audio id="player" src="http://cache.lexico.com/dictionary/audio/lunaWAV/C10/C1066200.wav"></audio>
+              </div>
+            </div>
+
+            <div class="font32-light text-center">
+              <div class="inline unit15_width">We assist organizations to solve 5 of their most significant problems,
+                <br>
+                in
+                realtime.
+              </div>
+            </div>
+
+            <div class="unit3_height"></div>
+            <div class="unit2_heihgt"></div>
+
+            <div class="font24-book text-center sub_title">Their need to:</div>
+            <div class="unit4_height"></div>
+          </div>
+
+          <div class="slider_each">
+            <div class="sequence_icon override_margin_top">
+              <div class="text-center sequence_icon_css">1</div>
+            </div>
+            <div class="font32-light text-center">Intelligently Measure Their <b>Cus</b>tomers' e<b>XP</b>erience.</div>
+            <div class="unit4_height"></div>
+            <div class="poster_center">
+              <img class="unit17_width" src="/assets/admin/prelaunch/about/About-Slider-1.png">
+
+              <div class="unit4_height"></div>
+              <div class="text-center font18-book sub_title">So, they can innovate their <br>value propositions.</div>
+              <div class="unit2_height"></div>
+            </div>
+
+          </div>
+          <div class="slider_each">
+            <div class="sequence_icon override_margin_top">
+              <div class="text-center sequence_icon_css">2</div>
+            </div>
+            <div class="font32-light text-center">Amplify Social <br> Word-Of-Mouth Marketing</div>
+            <div class="unit4_height"></div>
+            <div class="poster_center">
+              <img class="unit17_width" src="/assets/admin/prelaunch/about/About-Slider-2.png">
+
+              <div class="unit4_height"></div>
+              <div class="text-center font18-book sub_title">So, they can boost their revenue <br> streams and / or
+                create
+                goodwill.
+              </div>
+              <div class="unit2_height"></div>
+            </div>
+
+          </div>
+          <div class="slider_each">
+            <div class="sequence_icon override_margin_top">
+              <div class="text-center sequence_icon_css">3</div>
+            </div>
+            <div class="font32-light text-center">Promote Customer Intimacy.</div>
+            <div class="unit4_height"></div>
+            <div class="unit3_height"></div>
+            <div class="poster_center">
+              <img class="unit17_width" src="/assets/admin/prelaunch/about/About-Slider-3.png">
+
+              <div class="unit4_height"></div>
+              <div class="text-center font18-book sub_title">So, they can build truly <br> 1-to-1 relationships.</div>
+              <div class="unit2_height"></div>
+            </div>
+
+          </div>
+          <div class="slider_each">
+            <div class="sequence_icon override_margin_top">
+              <div class="text-center sequence_icon_css">4</div>
+            </div>
+            <div class="font32-light text-center">Extract Value From Their Existing Systems.</div>
+            <div class="unit4_height"></div>
+            <div class="poster_center">
+              <img class="unit17_width" src="/assets/admin/prelaunch/about/About-Slider-4.png">
+
+              <div class="unit4_height"></div>
+              <div class="text-center font18-book sub_title">So, they can enhance<br> operational productivity.</div>
+              <div class="unit2_height"></div>
+            </div>
+
+          </div>
+          <div class="slider_each">
+            <div class="sequence_icon override_margin_top">
+              <div class="text-center sequence_icon_css">5</div>
+            </div>
+            <div class="font32-light text-center">Capitalize On Customer Business Analytics.</div>
+            <div class="unit4_height"></div>
+            <div class="poster_center">
+              <img class="unit17_width" src="/assets/admin/prelaunch/about/About-Slider-5.png">
+
+              <div class="unit4_height"></div>
+              <div class="text-center font18-book sub_title">So, they can profit via <br> a strategic advantage.</div>
+              <div class="unit2_height"></div>
+            </div>
+
+          </div>
+
+        </div>
+        <%= render 'shared/contact_form' %>
+      </div>
+
+    </div>
+    <%= render 'shared/footer' %>
+  </div>
+</div>
+</body>
+</html>

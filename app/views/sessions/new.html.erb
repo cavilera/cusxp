@@ -1,0 +1,63 @@
+<% provide(:title, "CusXP - Sign in") %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+      try {
+          Typekit.load();
+      } catch (e) {
+      }
+      $(window).load(function () {
+          $('#wrap_all_content').show();
+      });
+  </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="wrap_all_content" style="display:none">
+
+    <div id="content" style="padding-top:0">
+      <div class="content_wrap">
+        <div id="welcome">
+          <div class="unit3_height"></div>
+          <a href="<%= root_path %>"><img class="welcome_logo" src="/assets/admin/prelaunch/CusXP-logo-animation.gif">
+          </a>
+
+          <div class="unit1_height"></div>
+
+          <div class="login_form">
+            <%= form_for(:session, url: sessions_path) do |f| %>
+                <div class="text-center form-title">Login</div>
+
+
+                <%= f.text_field :email, placeholder: "Email" %>
+
+                <%= f.password_field :password, placeholder: "Password" %>
+
+                <div class="submit">
+                  <div class="flipbox-container">
+                    <div class="flipbox_claim_reward" id="flip_claim_reward_front">
+                      <button type="submit" class="button_claim_reward font32-book">Submit</button>
+                    </div>
+                  </div>
+
+                  <div id="flip_claim_reward_back" style="display: none">
+                    <button type="submit" class="button_claim_reward active font32-book">
+                      <div class="flip-button-content">
+                        <img src="/assets/admin/Tick-icon-white.png"/>Wonderful
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+            <% end %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

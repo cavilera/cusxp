@@ -1,0 +1,6 @@
+<ul class="navigation_links font14-book">
+  <li class="tab_each <%= 'tab_each_active' if action_name == 'customer'%>"><%= link_to 'Customer', customer_path %></li>
+  <li class="tab_each <%= 'tab_each_active' if action_name == 'organization'%>"><%= link_to 'Organization', organization_path%></li>
+  <li class="tab_each "><a href="#contact_form">Support</a></li>
+  <li class="tab_each <%= 'tab_each_active' if action_name == 'about'%>"><%= link_to 'About', about_path%></li>
+</ul>

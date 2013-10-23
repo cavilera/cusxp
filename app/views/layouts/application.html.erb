@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <!--<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">-->
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/assets/admin/favicon.ico"/>
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "http://use.typekit.net/peo0zve.js", 'jquery.nav.min.js', 'jquery.scrollTo.js', "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= debug(params) if Rails.env.development? %>
+<%= if Rails.env.development?
+      link_to "Sign out", sign_out_path, method: "delete"
+    end %>
+
+<%= yield %>
+</body>
+</html>

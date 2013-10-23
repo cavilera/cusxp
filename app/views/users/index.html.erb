@@ -1,0 +1,26 @@
+<h2>Listing All User Accounts</h2>
+<hr>
+
+<table>
+  <thead>
+  <tr style="text-align:left">
+    <th>ID</th>
+    <th style="padding-right: 100px">Name</th>
+    <th>Email</th>
+    <th>Created</th>
+    <th>Updated</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.created_at %></td>
+        <td><%= user.updated_at %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

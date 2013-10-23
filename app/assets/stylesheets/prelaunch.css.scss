@@ -1,0 +1,570 @@
+/*------------------------------------------------------------------------------*/
+/* Tentative Global
+/*------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* Header & Menu
+/*------------------------------------------------------------------------------*/
+#top_navigation {
+  background: url("/assets/admin/CusXP-background.png");
+  position: fixed;
+  z-index: 9999;
+  border-bottom: 1px solid #ababab;
+}
+
+.header_image {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.header_image img {
+  margin: 0 auto;
+  height: 34px;
+}
+
+.website_menu {
+  color: #009bdf;
+  margin: 17px 28px 0 29px;
+  /*padding-bottom: 17px;*/
+}
+
+.website_menu ul {
+  margin: 0 0;
+  list-style-type: none;
+}
+
+.navigation_links {
+  display: table;
+  border: 2px solid #009bdf;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.tab_each {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 34px;
+  width: 144px;
+  border-right: 1px solid #009bdf;
+}
+
+.tab_each:hover {
+  cursor: pointer;
+  //background-color: rgba(0, 0, 0, 0.5);
+  //color: #fff;
+}
+
+.tab_each_active {
+  background-color: #009bdf
+}
+
+.tab_each_active a {
+  color: #fff;
+}
+
+.tab_each a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 0;
+}
+
+.tab_each:last-child {
+  border-right: none;
+}
+
+//.tab_each_active:last-child {
+//  /*-moz-border-radius: [top-left] [top-right] [bottom-right] [bottom-left]*/
+//  -moz-border-radius-topright: 5px;
+//  -moz-border-radius-bottomright: 5px;
+//  -webkit-border-top-right-radius: 5px;
+//  -webkit-border-bottom-right-radius: 5px;
+//  background-color: #00ce7d;
+//}
+//
+//.tab_each_active:first-child {
+//  /*-moz-border-radius: [top-left] [top-right] [bottom-right] [bottom-left]*/
+//  -moz-border-radius-topleft: 5px;
+//  -moz-border-radius-bottomleft: 5px;
+//  -webkit-border-top-left-radius: 5px;
+//  -webkit-border-bottom-left-radius: 5px;
+//  background-color: #00ce7d;
+//}
+
+.sub_tabs {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.sub_tabs a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Website footer
+/*------------------------------------------------------------------------------*/
+.website_footer {
+  color: #ababab;
+  margin: 0 27px;
+  padding-bottom: 17px;
+  border-top: 1px solid #ababab;
+}
+
+.footer_image {
+  padding-top: 34px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+.footer_note {
+  height: 34px;
+  line-height: 34px;
+}
+
+.copyright_note {
+  display: inline;
+  float: left;
+  line-height: 34px;
+  vertical-align: middle;
+}
+
+.footer_links {
+  display: inline;
+  float: right;
+  line-height: 34px;
+  vertical-align: middle;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Content - organization
+/*------------------------------------------------------------------------------*/
+
+.slider_each {
+  height: 714px;
+  padding: 34px 0;
+  border-bottom: 1px solid #ababab;
+}
+
+.slider_each:last-child {
+}
+
+.magic_poster_container {
+  margin-left: -27px;
+}
+
+.horizontal_line {
+  margin-top: 10px;
+  border-top: 1px solid #ababab;
+}
+
+.slider_title {
+  margin: -8px 0;
+  text-align: center;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32pt;
+  line-height: 36pt;
+  letter-spacing: 0.1em;
+}
+
+/*Why page*/
+
+.organization_magic {
+  margin-left: -27px;
+  width: 521px;
+}
+
+.sequence_icon {
+  margin-top: 34px;
+  margin-bottom: 17px;
+}
+
+.sequence_icon img {
+  height: 51px;
+}
+
+.sequence_icon_css {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18pt;
+  line-height: 28pt;
+  letter-spacing: 0.1em;
+
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50%;
+  line-height: 51px;
+  width: 51px;
+  height: 51px;
+  margin: 0 auto;
+}
+
+.slider_tab {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
+  line-height: 17pt;
+  letter-spacing: 0.1em;
+
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  height: 34px;
+  padding: 0 52px;
+
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.get_cusxp_now {
+  text-align: center;
+  margin-top: 34px;
+}
+
+.dream_soul_poster {
+  float: right;
+  margin-right: -27px;
+  margin-bottom: -33px;
+  width: 242px;
+}
+
+.button_left {
+  float: left;
+  margin-left: 26px;
+}
+
+.prize_goal_poster {
+  width: 278px;
+}
+
+.override_margin_right {
+  margin-right: -27px;
+}
+
+.override_margin_left {
+  margin-left: -27px;
+}
+
+.override_margin_top {
+  margin-top: 0px;
+}
+
+.override_margin_bottom {
+  margin-bottom: -34px;
+}
+
+.override_padding_top {
+  padding-top: 0px;
+}
+
+.margin68-left {
+  margin-left: -68px;
+}
+
+.poster_center {
+  text-align: center;
+}
+
+.poster_screeenshot {
+  height: 408px;
+}
+
+.you_can_win_poster {
+  float: right;
+  margin-right: -27px;
+  margin-bottom: -33px;
+  width: 218px;
+}
+
+/*What page*/
+
+.sub_title {
+  color: #777777;
+}
+
+.column_left {
+  width: 277px;
+  padding-right: 13px;
+  float: left;
+}
+
+.column_right {
+  width: 277px;
+  padding-left: 13px;
+  float: left;
+}
+
+.inline_block {
+  display: inline-block;
+}
+
+.messages_fixed_width {
+  width: 182;
+}
+
+.messages_fixed_width_130 {
+  width: 130px;
+}
+
+.messages_fixed_width_200 {
+  width: 200px;
+}
+
+/*// be careful not to set value too large*/
+/*// otherwise the there will margin which is very difficult to debug*/
+.works_or_not {
+  width: 200px;
+  height: 74px;
+}
+
+.what_divider {
+  width: 26px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.organization_how_extra_dot {
+  margin-left: -18px;
+}
+
+.contact_us_now {
+  text-align: center;
+}
+
+.cuxp_logo_inline {
+  margin-top: -10px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Content - customers
+/*------------------------------------------------------------------------------*/
+.get_rewarded_message {
+  width: 320px;
+}
+
+.get_rewards_img {
+  margin-left: -27px;
+  margin-right: -27px;
+  margin-top: -34px;
+  overflow: hidden;
+}
+
+.get_reward_title {
+  position: absolute;
+  width: 100%;
+  margin-left: -27px;
+  margin-right: -27px;
+}
+
+.get_rewards_msg {
+  margin-top: -60px;
+}
+
+.share_fun_img {
+  margin-right: -27px;
+  margin-top: -34px;
+}
+
+.share_fun_img img {
+  height: 782px;
+}
+
+.share_fun_title {
+  position: absolute;
+  left: 52px;
+
+}
+
+.special_case_button_display {
+  margin-top: -101px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Contact us form
+/*------------------------------------------------------------------------------*/
+
+.contact_us_form {
+  display: block;
+  padding-top: 34px;
+}
+
+.contact_us_form input, .contact_us_form textarea, .contact_us_form .country_drop_down {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  font-style: oblique;
+  font-size: 24pt;
+  line-height: 34pt;
+  letter-spacing: 0.1em;
+}
+
+.form-title {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36pt;
+  line-height: 46pt;
+  letter-spacing: 0.1em;
+
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+#about {
+  //border-bottom: 1px solid #ababab;
+
+}
+
+.pronunciation {
+  width: 17px;
+  height: 17px;
+  background: url(/assets/admin/pronounciation.png) no-repeat left bottom;
+  background-size: 17px 17px;
+}
+
+.pronunciation:active, .pronunciation:hover {
+  background: url(/assets/admin/pronounciation_active.png) no-repeat left bottom;
+  background-size: 17px 17px;
+}
+
+#about_top_section {
+  height: 523px;
+  border-bottom: 1px solid #ababab;
+}
+
+#about .slider_each:last-child {
+  margin-bottom: 3px;
+}
+
+.goto {
+  margin-top: -145px; /* Size of fixed header */
+  padding-bottom: 145px;
+  display: block;
+}
+
+#sub_nav li {
+  display: inline;
+
+}
+
+.current {
+  //background-color: black;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+
+  color: #ababab;
+}
+
+.current a {
+  color: inherit;
+}
+
+.contact_link_hidden {
+  display: none;
+}
+
+/*# SLIDER #*/
+.slider_area {
+  height: 610px;
+  /*padding: 30px 40px;*/
+  /*border-radius: 20px;*/
+  /*border: 3px solid white;*/
+  margin: 0 -27px;
+  position: relative;
+  /*box-shadow: 0px 0px 5px #000;*/
+}
+
+.slider_area .arrow-left {
+  background: url(/assets/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+}
+
+.slider_area .arrow-right {
+  background: url(/assets/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+}
+
+.swiper-container {
+  width: 640px;
+  height: 616px;
+}
+
+.content-slide {
+  padding: 0 27px;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #009bdf;
+}
+
+//Welcome page
+
+.welcome_icon {
+  width: 640px;
+}
+
+.login_form form {
+  display: block;
+  padding-top: 34px;
+}
+
+.login_form input {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  font-style: oblique;
+  font-size: 24pt;
+  line-height: 34pt;
+  letter-spacing: 0.1em;
+}
+
+.login_form input {
+  height: 96px;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: none;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}

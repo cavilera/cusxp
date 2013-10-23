@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, "CusXP - Your Customers' eXPerience") %>
+  <script>
+      try {
+          Typekit.load();
+      } catch (e) {
+      }
+      $(window).load(function () {
+          $('#wrap_all_content').show();
+      });
+  </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="wrap_all_content" style="display:none">
+    <div id="top_navigation">
+      <div class="header_image"><a href="<%= customer_path %>"><img src="/assets/admin/CusXP.png"></a></div>
+      <div class="website_menu">
+        <ul class="navigation_links font12-book">
+          <li class="tab_each"><%= link_to 'Customer', customer_path %></li>
+          <li class="tab_each"><%= link_to 'Organization', organization_path %></li>
+          <li class="tab_each "><a href="#contact_form">Support</a></li>
+          <li class="tab_each "><%= link_to 'About', about_path %></li>
+        </ul>
+        <div class="sub_tabs">
+          <div class="unit1_height"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="content_wrap">
+        <div id="thanks">
+          <div class="unit4_height"></div>
+          <div class="unit2_height"></div>
+          <div class=" font32-light text-center">Thank you!</div>
+          <div class="unit2_height"></div>
+          <div class="text-center font18-book">Your response has been captured successfully.
+          </div>
+          <div class="unit2_height"></div>
+          <div class="unit4_height"></div>
+          <div class="unit4_height"></div>
+          <div class="unit4_height"></div>
+          <div class="unit4_height"></div>
+        </div>
+
+      </div>
+
+    </div>
+    <footer>
+      <div class="website_footer">
+        <div class="footer_image"><img class="unit9_width" src="/assets/admin/prelaunch/CusXP-Logo-for-website.png">
+        </div>
+        <div class="footer_note">
+          <div class="font12-light copyright_note">© CusXP Pte Ltd All Rights Reserved.</div>
+          <div class="font12-light footer_links">
+            <a href="#">Terms Of Use</a> |
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
